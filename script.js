@@ -82,7 +82,7 @@ function getNews() {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      newsContainer.innerText = "Loading......";
+      
       let output = "";
       let article = data.articles;
       article.forEach((article) => {
