@@ -83,7 +83,7 @@ function getNews() {
     .then((response) => response.json())
     .then((data) => {
       
-      let output = "";
+      let output = " ";
       let article = data.articles;
       article.forEach((article) => {
         let authors = article.author;
@@ -106,7 +106,7 @@ function getNews() {
       });
       newsContainer.innerHTML = output;
     });
-  // .catch((error) => console.log(error));
+  .catch((error) => console.log(error));
 }
 
 getNews();
